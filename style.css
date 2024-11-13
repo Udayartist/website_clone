@@ -1,0 +1,957 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: auto;
+  background-color: antiquewhite;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+  height: 50px;
+}
+.restly {
+  height: 100%;
+  width: 8%;
+  background-color: rgb(0, 79, 153);
+}
+.restly a {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: "Trebuchet MS";
+}
+.restly:hover {
+  background-color: rgb(0, 95, 183);
+  transform: scale(1.03);
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-left: 40px;
+  padding: 5px;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+.buttons a {
+  text-decoration: none;
+  height: 100%;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  border-radius: 3px;
+  font-family: "Trebuchet MS";
+}
+.buttons a:hover {
+  background-color: rgb(238, 238, 238);
+  transform: scale(1.03);
+}
+.meet_now {
+  height: 80%;
+  width: 8%;
+  background-color: rgb(0, 79, 153);
+  margin-right: 40px;
+  border-radius: 3px;
+}
+.meet_now a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  font-family: "Trebuchet MS";
+}
+.meet_now:hover {
+  background-color: rgb(0, 95, 183);
+  transform: scale(1.03);
+}
+.header {
+  width: 100vw;
+  height: 600px;
+  background-image: url("business.jpeg");
+  /* i am unable to controle the background image opacity and color  */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: rgb(25, 132, 255);
+  position: relative;
+}
+.header span {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 76, 255, 0.305);
+  position: absolute;
+}
+/* .opacity {
+ 
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 145, 255);
+  opacity: 30%;
+} */
+.header h1 {
+  position: relative;
+  width: 40%;
+  align-content: center;
+  font-size: 3rem;
+  font-family: "Trebuchet MS";
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+}
+.header p {
+  position: relative;
+  font-family: "Trebuchet MS";
+  color: white;
+  font-weight: lighter;
+}
+.header a {
+  position: relative;
+  font-family: "Trebuchet MS";
+  color: white;
+  font-weight: lighter;
+  background-color: rgb(0, 102, 255);
+  border-radius: 2px;
+  width: 10%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.header a:hover {
+  background-color: rgb(28, 119, 255);
+  transform: scale(1.03);
+}
+.card_manager {
+  /* padding: 25px; */
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  gap: 2rem;
+}
+.first_card {
+  width: 14%;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 4px;
+  padding: 14px;
+  gap: 20px;
+  transition: transform 0.2s;
+}
+.first_card:hover {
+  transform: scale(1.05);
+}
+.second_card {
+  width: 14%;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 4px;
+  padding: 14px;
+  gap: 20px;
+  transition: transform 0.2s;
+}
+.second_card:hover {
+  transform: scale(1.05);
+}
+.third_card {
+  width: 14%;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 4px;
+  padding: 14px;
+  gap: 20px;
+  transition: transform 0.2s;
+}
+.third_card:hover {
+  transform: scale(1.05);
+}
+.fourth_card {
+  width: 14%;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 4px;
+  padding: 14px;
+  gap: 20px;
+  transition: transform 0.2s;
+}
+.fourth_card:hover {
+  transform: scale(1.05);
+}
+
+.first_card #computer {
+  width: 80px;
+  height: 80px;
+}
+.first_card img {
+  width: 30px;
+  height: 25px;
+}
+.first_card h3 {
+  font-family: sans-serif;
+  font-size: medium;
+  color: rgb(56, 56, 56);
+}
+.first_card p {
+  font-family: sans-serif;
+  font-size: small;
+  padding-bottom: 10px;
+  color: gray;
+}
+
+.second_card #it_manage {
+  width: 95px;
+  height: 75px;
+}
+.second_card img {
+  width: 30px;
+  height: 25px;
+}
+.second_card h3 {
+  font-family: sans-serif;
+  font-size: medium;
+  color: rgb(56, 56, 56);
+}
+.second_card p {
+  font-family: sans-serif;
+  font-size: small;
+  padding-bottom: 10px;
+  color: gray;
+}
+
+.third_card #cloud_service {
+  width: 95px;
+  height: 78px;
+}
+.third_card img {
+  width: 30px;
+  height: 25px;
+}
+.third_card h3 {
+  font-family: sans-serif;
+  font-size: medium;
+  color: rgb(56, 56, 56);
+}
+.third_card p {
+  font-family: sans-serif;
+  font-size: small;
+  padding-bottom: 10px;
+  color: gray;
+}
+
+.fourth_card #machine_learn {
+  width: 100px;
+  height: 80px;
+}
+.fourth_card img {
+  width: 30px;
+  height: 25px;
+}
+.fourth_card h3 {
+  font-family: sans-serif;
+  font-size: medium;
+  color: rgb(56, 56, 56);
+}
+.fourth_card p {
+  font-family: sans-serif;
+  font-size: small;
+  padding-bottom: 10px;
+  color: gray;
+}
+.support_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* gap: 8rem; */
+  width: 100vw;
+  height: 750px;
+  background: url("technology.jpg"), no-repeat;
+  background-size: cover;
+}
+#image_card img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+.support_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  gap: 1.5rem;
+}
+.support_card h6 {
+  color: white;
+  font-family: "Trebuchet MS";
+  font-size: medium;
+}
+.support_card h2 {
+  color: white;
+  font-family: "Trebuchet MS";
+}
+.support_card p {
+  color: white;
+  font-family: "Trebuchet MS";
+}
+.anchor_tags ul {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 10rem;
+  row-gap: 1rem;
+  color: white;
+  /* grid ki jo rows or columns hote hain unko extream left or right mai kese place krte hain matlab container ki width k ander hi rhe pr jhuke hue last boundary se. */
+}
+.anchor_tags a {
+  text-decoration: none;
+  color: white;
+  font-family: "Trebuchet MS";
+}
+.anchor_tags a:hover {
+  /* transform: scale(1.2);
+  transition: 0.2; */
+  color: rgb(210, 210, 210);
+}
+#it_services {
+  width: 100vw;
+  height: 800px;
+  background: rgb(207, 207, 207);
+  background: linear-gradient(
+    0deg,
+    rgba(207, 207, 207, 1) 0%,
+    rgba(255, 255, 255, 1) 77%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.header_third {
+  gap: 1rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header_third h3 {
+  width: 40%;
+  align-content: center;
+  font-size: 1.5rem;
+  font-family: "Trebuchet MS";
+  color: rgb(50, 50, 50);
+  font-weight: lighter;
+  text-align: center;
+}
+.header_third p {
+  font-family: "Trebuchet MS";
+  color: rgb(0, 102, 149);
+  font-weight: lighter;
+  font-size: medium;
+}
+.cards_it_services {
+  width: 55%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 2rem;
+}
+.card {
+  border-radius: 4px;
+  padding: 20px;
+  /* height: 150px;
+  width: 50%; */
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  border: 1px solid rgb(214, 214, 214);
+  gap: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgb(196, 196, 196);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card_icon img {
+  width: 60px;
+  height: 60px;
+}
+.card_content {
+  gap: 1rem;
+  height: 90%;
+}
+.card_content h4 {
+  font-family: sans-serif;
+  font-size: medium;
+  font-weight: lighter;
+  padding-bottom: 5px;
+  color: rgb(40, 40, 40);
+}
+.card_content p {
+  padding-bottom: 5px;
+  font-family: sans-serif;
+  font-size: small;
+  font-weight: lighter;
+  color: rgb(81, 81, 81);
+}
+.card_content a {
+  padding-top: 10px;
+  text-decoration: none;
+  color: rgb(45, 45, 45);
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.card_content a:hover {
+  color: rgb(66, 66, 66);
+}
+.it_services_button a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: rgb(0, 78, 156);
+  color: white;
+  padding: 10px 20px;
+  transition: transform 0.2s;
+}
+.it_services_button a:hover {
+  background-color: rgb(0, 93, 187);
+  transform: scale(1.03);
+}
+.fourth_div {
+  height: 750px;
+  width: 100%;
+  background-size: cover;
+  background-image: url(/website_clone/images/techno.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pop_up {
+  width: 60%;
+  height: 70%;
+  /* background-color: rgba(0, 87, 208, 0.552); */
+  background-color: #00389999;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 4rem;
+}
+.pop_up_heading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.head_title {
+  color: white;
+  font-family: sans-serif;
+  width: 60%;
+}
+.head_title p {
+  font-size: small;
+  padding-bottom: 10px;
+}
+.head_title h1 {
+  font-weight: lighter;
+}
+.pop_up_heading a {
+  width: 20%;
+  color: white;
+  font-family: sans-serif;
+  border-radius: 3px;
+  background-color: #003899;
+  text-align: center;
+  padding: 13px 8px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.pop_up_heading a:hover {
+  transform: scale(1.03);
+  background-color: #0043b6;
+}
+.pop_up_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 60%;
+}
+/* .first_icon i {
+  height: 5rem;
+  width: 5rem;
+} */
+.first_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+  height: 100%;
+  gap: 1rem;
+  transition: transform 0.2s;
+}
+.first_icon img {
+  width: 80%;
+  height: 60%;
+}
+.first_icon p {
+  color: white;
+  font-size: medium;
+  font-family: sans-serif;
+  text-align: center;
+}
+.first_icon:hover {
+  transform: scale(1.03);
+}
+.second_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  gap: 1rem;
+  transition: transform 0.2s;
+}
+.second_icon img {
+  width: 80%;
+  height: 60%;
+}
+.second_icon p {
+  color: white;
+  font-size: medium;
+  font-family: sans-serif;
+  text-align: center;
+}
+.second_icon:hover {
+  transform: scale(1.03);
+}
+.third_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  gap: 1rem;
+  transition: transform 0.2s;
+}
+.third_icon img {
+  width: 80%;
+  height: 60%;
+}
+.third_icon p {
+  color: white;
+  font-size: medium;
+  font-family: sans-serif;
+  text-align: center;
+}
+.third_icon:hover {
+  transform: scale(1.03);
+}
+.payment_card_container {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+}
+.payment_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 20%;
+}
+.payment_heading p {
+  font-size: medium;
+  font-family: "Trebuchet MS";
+  color: #0043b6;
+  padding-bottom: 0.7rem;
+}
+.payment_heading h1 {
+  font-size: x-large;
+  font-family: "Trebuchet MS";
+}
+.payment_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 55%;
+  height: 60%;
+}
+.payment_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 28%;
+  height: 80%;
+  border-radius: 5px;
+  padding: 0.5rem;
+  padding-bottom: 2rem;
+  box-shadow: 2px 2px 10px rgb(196, 196, 196);
+  transition: transform 0.2s;
+}
+.payment_card:hover {
+  transform: scale(1.03);
+}
+.payment_amount {
+  height: 35%;
+  background-color: rgba(218, 233, 255, 0.64);
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.payment_amount h6 {
+  font-family: "Trebuchet MS";
+  padding: 5px;
+}
+.payment_amount span {
+  font-size: xx-large;
+  font-weight: bold;
+  color: blue;
+  font-family: "Trebuchet MS";
+  padding: 5px;
+}
+.payment_amount p {
+  font-family: "Trebuchet MS";
+  padding: 5px;
+  color: gray;
+}
+#paragraph {
+  text-align: center;
+  line-height: 20pt;
+  font-family: "Trebuchet MS";
+  color: rgb(81, 81, 81);
+  font-weight: lighter;
+}
+.payment_card a {
+  width: 60%;
+  height: 10%;
+  background-color: #0043b6;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.payment_card a:hover {
+  transform: scale(1.03);
+  background-color: #1b5ccc;
+}
+.our_gallery {
+  width: 100%;
+  height: 300px;
+  background-color: #004dd3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  padding-top: 4rem;
+}
+.our_gallery p {
+  color: white;
+  font-family: "Trebuchet MS";
+  font-size: medium;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+.our_gallery h1 {
+  color: white;
+  font-family: "Trebuchet MS";
+  font-size: xx-large;
+  font-weight: lighter;
+}
+.tech_images {
+  position: absolute;
+  z-index: 1;
+  top: 170px;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  gap: 0.4rem;
+  overflow: hidden;
+}
+.tech_images img {
+  width: 30%;
+  height: 90%;
+}
+.latest_news {
+  width: 100%;
+  height: 700px;
+  background-color: #e2e2e2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.news_heading {
+  position: relative;
+  top: 70px;
+  text-align: center;
+}
+.news_heading p {
+  font-size: medium;
+  font-family: "Trebuchet MS";
+  padding-bottom: 0.7rem;
+  color: #003899;
+}
+.news_heading h1 {
+  font-size: xx-large;
+  font-family: "Trebuchet MS";
+}
+.news_card_container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  background-color: #e2e2e2;
+  /* width: 70%;
+  height: auto; */
+  gap: 2rem;
+}
+.news_card {
+  width: 16%;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* justify-content: space-around; */
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px rgb(221, 221, 221);
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+.news_card:hover {
+  transform: scale(1.03);
+  box-shadow: 2px 2px 10px rgb(194, 194, 194);
+}
+.news_card img {
+  width: 100%;
+  height: 40%;
+  border-radius: 5px 5px 0px 0px;
+}
+.date_tag {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.date_tag span {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+}
+.date_tag span p {
+  font-size: small;
+  color: gray;
+}
+
+.date_tag span i {
+  color: #003899;
+  padding-right: 8px;
+}
+.content_news {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.content_news h1 {
+  font-size: medium;
+  font-family: "Trebuchet MS";
+}
+.content_news p {
+  font-size: small;
+  color: rgb(78, 78, 78);
+}
+
+.final_footer {
+  width: 100%;
+  height: 400px;
+  background: rgb(0, 82, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.company {
+  width: 13%;
+  height: 200px;
+}
+.company h4 {
+  font-size: large;
+  color: white;
+  font-family: "Trebuchet MS";
+  padding-bottom: 2rem;
+}
+.company p {
+  font-size: small;
+  color: white;
+  font-family: "Trebuchet MS";
+  /* text-wrap: wrap; */
+  /* padding-bottom: 1rem; */
+}
+.location {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%;
+  height: 20px; */
+}
+.location i {
+  color: white;
+}
+
+.page_link {
+  width: 10%;
+  height: 200px;
+}
+.page_link h4 {
+  font-size: large;
+  color: white;
+  font-family: "Trebuchet MS";
+  padding-bottom: 2rem;
+}
+.page_link span {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  line-height: 20pt;
+}
+.page_link span a {
+  color: white;
+  font-family: "Trebuchet MS";
+  font-size: small;
+  text-decoration: none;
+}
+.contacts {
+  width: 15%;
+  height: 200px;
+}
+.contacts h4 {
+  font-size: large;
+  color: white;
+  font-family: "Trebuchet MS";
+  padding-bottom: 2rem;
+}
+.contacts span {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.contacts span div {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.contacts span div i {
+  color: white;
+  padding-right: 0.5rem;
+}
+.contacts span div a {
+  color: white;
+  font-family: "Trebuchet MS";
+  font-size: small;
+  text-decoration: none;
+  padding: 0.7rem;
+}
+
+.lowest_footer {
+  width: 100%;
+  height: 50px;
+  background-color: #004dd3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5rem;
+}
+.social_logo {
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+}
+.social_logo a {
+  color: white;
+}
+.copyright a {
+  color: white;
+  font-weight: lighter;
+  text-decoration: none;
+}
